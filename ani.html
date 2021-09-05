@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            background-image: url("https://betanews.com/wp-content/uploads/2019/10/plain_desktop.png");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .gupu {
+            width: 100px;
+            height: 10px;
+            animation: move 5s linear infinite;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translate(0);
+                opacity: 0;
+            }
+            50% {
+                transform: translate(1100px);
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .centred {
+            color: goldenrod;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 300px;
+            border: 15px solid grey;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gupu">
+        <img src="https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg" width="220" height="100" />
+    </div>
+    <div class="centred">
+        <h2 class="h2">Shell</h2>
+
+        <div>
+            <span style="color:white; font-style: bolid; border-radius: 100px;">[root@Dockerhost ~]#</span>
+            <input id="in1" />
+            <pre><div id="d1" style="color:black; font-style: bolid; font-family: Avenir Next; "> (Final Result!!)</div>  <pre>
+
+      <centre><button onclick="lw()">Pekaboo</button></centre>
+    </div>
+  )
+
+    <script>
+      function lw() {
+      
+      var i = document.getElementById("in1").value
+
+      var xhr = new XMLHttpRequest();
+   
+      xhr.open("GET", "http://192.168.1.32/cgi-bin/backend.py?x=" + i, true);
+    
+      xhr.send();
+      xhr.onload = function() {
+              var output = xhr.responseText;
+              document.getElementById("d1").innerHTML = output;
+      console.log(lw());	      
+      }
+    }
+    </script>
+  </body>
+</html>
